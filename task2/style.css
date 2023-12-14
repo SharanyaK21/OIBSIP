@@ -1,0 +1,205 @@
+/*section:target{
+    border : 2px solid rgb(37,37,222);
+}*/
+
+body
+{
+    font-size: 100px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: mediumpurple;
+}
+.t{
+    width: fit-content;
+    font-size: 30px;
+    margin-left: 40px;
+    transition: 0.3s all;
+    animation: paraLeft 1s forwards;
+}
+@keyframes paraleft{
+    0%
+    {
+        transform: translateX(0px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.links-container{
+    /*position: fixed;*/
+    padding-left: 720px;
+    font-weight: bold;
+    height: fit-content;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.links-container ul li{
+    list-style:none;
+    float: left;
+    margin: 0 20px;
+    
+}
+
+.name
+{
+    color: white;
+    display: inline-block;
+}
+.p
+{
+    transition: 0.3s all;
+    animation: paraRight 1s forwards;
+    margin-left: 50px;
+}
+@keyframes paraRight{
+    0%
+    {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.n1{
+    margin-left: 50px;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: typing 1s steps(20,end) forwards, blinking .8s infinite;
+    font-size: 86px;
+    width: 45px;
+    display: flex;
+    width: 45px;
+}
+@keyframes typing{
+    from {width: 0}
+    to {width: 700px}
+}
+@keyframes blinking{
+    from{ border-color: transparent;}
+    to{ border-color:lightcoral;}
+}
+/*n1{
+    margin-top: 150px;
+    padding-left: 50px;
+    width: 45px;
+}*/
+.links-container a 
+{
+    padding: 20px;
+    padding-right: 100px;
+    color: white;
+    padding-bottom: 5px;
+    text-decoration: none;
+    transition: 0.3s all;
+    animation: paraRight 1s forwards;
+}
+.links-container a:hover
+{
+    background-color: rgba(240,142,21,0.909, green, blue, alpha);
+}
+#id1
+{
+    color: white;
+    font-size: 20px;
+}
+#id2
+{
+    background-color: rgba(67, 31, 31, 0.5);
+    color: white;
+    font-size: 20px;
+    padding: 100px;
+    margin: 50px;
+}
+#id3
+{
+    height: 500px;
+    margin: 50px;
+    color: white;
+    font-size: 25px;
+    padding-top: 35px;
+    background-color: rgba(67, 31, 31, 0.5);
+}
+#id4
+{
+    font-size: 25px;
+    margin: 50px;
+    padding-top: 30px;
+    background-color: rgba(67, 31, 31, 0.5);
+}
+#id5
+{
+    font-size: 25px;
+    margin: 50px;
+    padding-top: 30px;
+    background-color: rgba(67, 31, 31, 0.5);
+}
+.achieve
+{
+    color: white;
+    padding-bottom: 40px;
+    margin-left: 200px;
+}
+.achieve li
+{
+    padding: 10px;
+}
+#about
+{
+    display: flex;
+}
+.text
+{
+    padding: 20px;
+    font-size: 25px;
+}
+.head
+{
+    font-weight: normal;
+    color: rgba(240,142,21,0.909);
+    text-align: center;
+    text-decoration: underline;
+}
+.skill
+{
+    display: flex;
+    margin-left: 225px;
+}
+.logo
+{
+    padding: 20px;
+    background-color: rgba(255,255,255,0.114);
+    margin: 10px;
+}
+.info a
+{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    text-decoration: none;
+}
+.info a:hover
+{
+    color: orange;
+}
+.info{
+    padding: 20px;
+    align-content: middle;
+    text-align: center;
+}
+.contact
+{
+    margin-left: 325px;
+    display: flex;
+}
+.name
+{
+    display: inline-block;
+}

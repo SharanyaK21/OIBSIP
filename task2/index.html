@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    
+    <body>
+        <div class="name">
+            <div class="links-container">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="t"><h1>Hi, I'm</h1></div>
+            <div class="n1">K Sharanya</div>
+            <div></div>
+            </div>
+            <section id="id1">
+                <div class="p"><p> Hello Everyone!, I'm an Engineering student with a background of Information Technology, passionate to Web Development </p></div>    
+            </section>
+            <section id="id2">
+                <div class="head"><h1>About Me</h1></div>
+                <div id="About">
+                    <img src="girl.png" width="420px" height="420px">
+                    <div class="text"> I am K Sharanya, pursuing BTech in Information Technology from B V Raju Institute of Technology.Skilled upto intermediate level in C,C++, Java, Python, HTML and CSS,I bring a versatile coding background to efficiently tackle software and web development challenges.<br>I hold certifications in SoftSkills in NPTEL and AWS Machine Learning, showcasing my commitment and curiosity in continuous learning and skill development. 
+                    </div>
+                </div>
+            </section>
+            <section id="id3">
+                <div class="head"><h1>My Skills</h1></div>
+                <div class="skill">
+                    <div class="logo"><img src="C.png" width="90px" height="90px"></div>
+                    <div class="logo"><img src="python.png" width="90px" height="90px"></div>
+                    <div class="logo"><img src="java.png"width="100px" height="120px"></div>
+                    <div class="logo"><img src="html_css.png" width="150px" height="120px"></div>
+                </div>
+            </section>
+        <section id="id5">
+            <div class="head"><h1>Achievements</h1></div>
+            <div class="achieve">
+                <ul>
+                    <li>NPTEL online certification for Soft skills</li>
+                    <li>AWS Machine learning certification</li>
+                </ul>
+            </div>
+        </section>
+            <section>
+                <section id="id4">
+                    <div class="head"><h1>Contact</h1></div>
+                    <div class="contact">
+                        <div class="info">
+                            <img src="phone-png-6.png" width="40px" height="40px">
+                            <a href="#">Mobile</a>
+                        </div>
+                        <div class="info">
+                            <img src="linkedin.png" width="40px" height="40px">
+                            <a href="http://www.linkedin.com/in/koyyadi-sharanya-koyyadi-sharanya-262439261">LinkedIn</a>
+                        </div>
+                        <div class="info">
+                            <img src="github.png" width="40px" height="40px">
+                            <a href="https://github.com/SharanyaK21/OIBSIP.git">Github</a>
+                        </div>
+                        <div class="info">
+                            <img src="email.png" width="40px" height="40px">
+                            <a href="#">E-mail</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </body>
+        <script>
+            var words=['K SHARANYA','sharanya'],
+                part,
+                i=0,
+                offset=0,
+                len=words.length,
+                forwards=true,
+                skip_count=0,
+                skip_delay=15,
+                speed=70;
+            var wordflick=function(){
+                setInterval(function()  {
+                    if(forwards){
+                        if(offset>=words[i].length){
+                            ++skip_count;
+                            if(skip_count==skip_delay){
+                                forwards=false;
+                                skip_count=0;
+                            }
+                        }
+                    }
+                    else{
+                        if(offset==0){
+                            forwards=true;
+                            i++;
+                            offset=0;
+                            if(i>=len){
+                                i=0;
+                            }
+                        }
+                    }
+                    part=words[i].subsr(0,offset);
+                    if(skip_count==0){
+                        if(forwards){
+                            offset++;
+                        }
+                        else{
+                            offset--;
+                        }
+                    }
+                    $('.n1').text(part);
+                },speed);
+            };
+            $(document).ready(function(){
+                wordflick();
+            });
+        </script>
+    </head>
+</html>
