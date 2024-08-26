@@ -5,7 +5,7 @@ class BankAccount{
     String username;
     String password;
     String accountNo;
-    float balance=100000f;
+    float balance=1000000f;
     int transactions=0;
     String transactionHistory="";
 
